@@ -1,0 +1,8 @@
+<h2>Post List</h2>
+<ul>
+  <li *ngFor="let post of posts" (click)="showPostDetails(post)">
+    {{ post.title }}
+  </li>
+</ul>
+
+<app-post-details [post]="selectedPost"></app-post-details>
